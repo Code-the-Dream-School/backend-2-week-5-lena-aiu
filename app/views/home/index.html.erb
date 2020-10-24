@@ -1,2 +1,32 @@
 <h1>Home#index</h1>
 <p>Find me in app/views/home/index.html.erb</p>
+
+<% content_for :content do %>
+  <div class="jumbotron text-center">
+    <h1>Want to Learn About Sharks?</h1>
+	<p class="lead">Are you ready to learn about sharks</p>
+	<p><%= button_to 'Get Shark Info', sharks_path, :method => :get, :class => "btn btn-primary btn-lg" %></p>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+	    <h3>Want to Learn About Sharks?</h3>
+        <p>
+		  <div class="caption">Through some are dangerous, 
+		  sharks generally do not attack humans. Out of the 500 species 
+		  known to researchers, only 30 have been to attack humans.
+		  </div>
+		</p>
+      </div>
+      <div class="col-lg-6">
+	    <h3>Sharks are ancient</h3>
+        <p>
+          <div class="caption">There is evidence to suggest that sharks 
+		  lived up to 400 million years ago.
+		  </div>
+        </p>
+      </div>
+    </div>
+  </div>
+<% end %>
+<%= render template: "layouts/application" %>
