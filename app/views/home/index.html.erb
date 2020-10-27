@@ -3,14 +3,14 @@
 
 <% content_for :content do %>
   <div class="jumbotron text-center">
-    <h1>Want to Learn About Sharks?</h1>
-	<p class="lead">Are you ready to learn about sharks</p>
+    <h1 class="display-3 mt-5">Want to Learn About Sharks?</h1>
+	<p class="lead mb-5">Are you ready to learn about sharks</p>
 	<p><%= button_to 'Get Shark Info', sharks_path, :method => :get, :class => "btn btn-primary btn-lg" %></p>
   </div>
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
-	    <h3>Want to Learn About Sharks?</h3>
+	    <h3>Not all sharks are alike</h3>
         <p>
 		  <div class="caption">Through some are dangerous, 
 		  sharks generally do not attack humans. Out of the 500 species 
@@ -27,6 +27,35 @@
         </p>
       </div>
     </div>
+	
+	<!-- speakers -->
+	<h1 class="display-4 text-center my-5">Speakers</h1>
+	[Speakers bios go here]
+	<!-- /speakers -->
+
+	<!-- schedule -->
+	<h1 class="display-4 text-center my-5">Schedule</h1>
+	[Conference schedule goes here]
+    <!-- /schedule -->
+	
+      <hr>
+      <div class="row py-4 text-muted">
+        <div class="col-md col-xl-5">
+          <p><strong>About Everythings Sharks</strong></p>
+          <p>Everythings Sharks brings information to people everywhere to help them to practice in Bootstap framework and change the world.</p>
+        </div>
+        <div class="col-md col-xl-5 ml-auto">
+          <p><strong>Stay up-to-date on Everythings Sharks</strong></p>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Email">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="button">Sign up</button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <hr><!-- /signup form -->
+	
   </div>
 <% end %>
 <%= render template: "layouts/application" %>
